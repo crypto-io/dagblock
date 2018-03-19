@@ -1,0 +1,33 @@
+{
+  "name": "dagblock",
+  "version": "0.1.0",
+  "description": "DAGChain block",
+  "main": "dist/dagblock-node.js",
+  "module": "dist/dagblock-es.js",
+  "repository": "https://github.com/crypto-io/dagblock",
+  "author": "vandeurenglenn <vandeurenglenn@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "backed": {
+    "bundles": [
+      {
+        "src": "src/index.js",
+        "dest": "dist/dagblock.js",
+        "format": "es"
+      },
+      {
+        "src": "src/index.js",
+        "dest": "dist/dagblock.js",
+        "format": "cjs"
+      }
+    ]
+  },
+  "devDependencies": {
+    "tape": "^4.9.0"
+  },
+  "dependencies": {
+    "cids": "https://github.com/vandeurenglenn/js-cid",
+    "ipfs-block": "^0.6.1",
+    "is-buffer": "^2.0.2"
+  }
+}
